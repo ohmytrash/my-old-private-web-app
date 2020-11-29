@@ -1,15 +1,31 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <Navigation class="navigation" />
     <router-view />
   </div>
 </template>
 
 <script>
+import Navigation from '@/components/Navigation'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    Navigation
+  }
 }
 </script>
+
+<style lang="scss">
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+body {
+  padding-left: 60px;
+  @include media-breakpoint-down(sm) {
+    padding-left: 0px;
+    padding-bottom: 60px;
+  }
+}
+</style>
