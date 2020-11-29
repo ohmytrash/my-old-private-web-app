@@ -86,19 +86,20 @@ $font-weight-normal:          400;
 $font-weight-bold:            500;
 $font-weight-base:            400;
 
+$headings-margin-bottom: calc(1em / 2);
 
-$spacer: 0.875rem;
-$spacers: (
-  0: 0,
-  1: ($spacer * .25),
-  2: ($spacer * .5),
-  3: $spacer,
-  4: ($spacer * 2),
-  5: ($spacer * 3)
-);
+// $spacer: 0.875rem;
+// $spacers: (
+//   0: 0,
+//   1: ($spacer * .25),
+//   2: ($spacer * .5),
+//   3: $spacer,
+//   4: ($spacer * 2),
+//   5: ($spacer * 3)
+// );
 
 $grid-columns:                12;
-$grid-gutter-width:           14px;
+// $grid-gutter-width:           14px;
 $grid-row-columns:            6;
 
 

@@ -1,12 +1,12 @@
 <template>
   <div class="home-page">
     <div class="home-page__wrapper">
-      <h1 class="display-2 text-dark font-weight-light">DEDE ARDIANSYA</h1>
-      <p class="lead mb-5 text-dark text-uppercase">Web developer from makassar indonesia</p>
+      <h1 class="home-page__title">DEDEARD <span aria-hidden="true">DEDEARD</span></h1>
+      <p class="home-page__subtitle mb-5 text-uppercase">Web developer from makassar indonesia</p>
       <div class="home-page__socials">
-        <a href="#">GH</a>
-        <a href="#">IG</a>
-        <a href="#">WA</a>
+        <a href="#">BEHENCE</a>
+        <a href="#">INSTAGRAM</a>
+        <a href="#">DRIBBBLE</a>
       </div>
     </div>
   </div>
@@ -56,14 +56,44 @@ export default {
     padding: 15px;
   }
 
+  &__title {
+    position: relative;
+    @include font-size(6rem);
+    color: $dark;
+    font-weight: $font-weight-light;
+    margin-bottom: 1rem;
+    span {
+      white-space: normal;
+      position: absolute;
+      font-weight: $font-weight-bold;
+      width: 100%;
+      top: -20%;
+      left: 0;
+      transform: scale(2);
+      opacity: 0.05;
+      // transform: translateX(-50%);
+    }
+  }
+
+  &__subtitle {
+    @include font-size(1rem);
+    @include media-breakpoint-down(md) {
+      @include font-size(0.9rem);
+    }
+    color: $dark;
+  }
+
   &__socials {
     display: flex;
     justify-content: center;
     a {
       display: block;
-      padding: $spacer;
+      padding: 0.6em;
       color: $gray-800;
-      font-weight: $font-weight-bold;
+      @include font-size(0.875rem);
+      @include media-breakpoint-down(md) {
+        @include font-size(0.8125rem);
+      }
       &:hover {
         color: $primary;
       }

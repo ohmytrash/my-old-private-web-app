@@ -2,3 +2,12 @@
 
 @import "vars";
 @import "bootstrap";
+
+
+.btn {
+  font-weight: $font-weight-light;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  box-shadow: none !important;
+  outline: none !important;
+}
