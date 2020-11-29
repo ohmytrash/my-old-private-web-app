@@ -1,9 +1,9 @@
 <template>
   <nav class="navigation">
-    <router-link :to="{ name: 'Home' }" class="navigation-link brand mb-md-auto" title="Home">
+    <router-link :to="{ name: 'Home' }" class="navigation-link brand mb-auto mr-auto" title="Home">
       <BrandIcon width="30" />
     </router-link>
-    <router-link :to="{ name: 'Home' }" exact-active-class="active" class="navigation-link d-none d-lg-block" title="Home">
+    <router-link :to="{ name: 'Home' }" exact-active-class="active" class="navigation-link d-none d-md-block" title="Home">
       <HomeIcon width="18" />
     </router-link>
     <router-link :to="{ name: 'About' }" exact-active-class="active" class="navigation-link" title="About">
@@ -15,7 +15,7 @@
     <router-link :to="{ name: 'Contact' }" exact-active-class="active" class="navigation-link" title="Contact">
       <MailIcon width="18" />
     </router-link>
-    <a href="#" class="navigation-link mt-md-auto" title="Night Mode">
+    <a href="#" class="navigation-link mt-auto ml-auto" title="Night Mode">
       <MoonIcon width="18" />
     </a>
   </nav>
@@ -45,7 +45,7 @@ export default {
     width: 0px;
   }
 
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     height: 60px;
     width: 100%;
     bottom: 0;
@@ -57,6 +57,8 @@ export default {
     position: relative;
     display: block;
     padding: 15px;
+    width: 60px;
+    height: 60px;
     line-height: 30px;
     text-align: center;
     color: $gray-500;
@@ -69,11 +71,6 @@ export default {
     &.active,
     &:hover {
       color: $primary;
-    }
-
-    @include media-breakpoint-down(sm) {
-      width: auto;
-      flex: 1;
     }
   }
 }
