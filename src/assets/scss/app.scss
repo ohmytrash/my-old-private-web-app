@@ -100,8 +100,8 @@ body {
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-    filter: grayscale(50%);
-    opacity: 0.4;
+    filter: grayscale(80%);
+    opacity: 0.3;
     @include media-breakpoint-down(md) {
       width: calc(100% - 30px);
       height: calc(100% - 30px);
@@ -335,16 +335,15 @@ body {
       top: 0;
       display: flex;
       transition: transform 500ms ease-out;
-      transform: translateY(-100%);
+      transform: translateY(-110%);
       &__content {
         margin: auto;
+        margin-top: 40%;
         text-align: center;
-
         span {
           display: block;
-          font-size: 1.5rem;
+          font-size: 1.25rem;
           margin-bottom: 1em;
-          font-weight: $font-weight-bold;
         }
       }
       .btn {
