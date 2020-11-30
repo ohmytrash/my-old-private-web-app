@@ -8,6 +8,7 @@ export default {
   name: 'CursorFollower',
   data() {
     return {
+      interval: null,
       mouseX: window.innerWidth / 2,
       mouseY: window.innerHeight / 2,
       circle: {
@@ -54,7 +55,10 @@ export default {
         this.$refs.circle.classList.remove('link')
       }
     }
-    setInterval(this.move, 1000 / 60)
+    if (!this.interval) this.interval = setInterval(this.move, 1000 / 60)
+  },
+  beforeDestroy() {
+    if (this.interval) window.clearInterval(this.interval)
   }
 }
 </script>

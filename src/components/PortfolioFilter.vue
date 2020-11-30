@@ -16,7 +16,7 @@
       <!-- eslint-disable-next-line vue/no-use-v-if-with-v-for -->
       <div class="col-lg-4 col-md-6 my-3" v-for="(item, i) in items" :key="i" v-if="select == item.category || select == 'all'">
         <div class="img-wrap">
-          <img :src="item.img + '?id=' + i" alt="img" class="img-fluid d-block" />
+          <img :src="item.img + '?id=' + i" alt="img" class="img-fluid d-block w-100" />
           <div class="overlay-wrap">
             <div class="overlay-wrap__content">
               <span class="text-light">{{ item.text }}</span>

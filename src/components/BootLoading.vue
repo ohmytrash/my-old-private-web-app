@@ -35,7 +35,9 @@ export default {
 
   &-wrap {
     width: 100px;
+    text-align: center;
     svg {
+      display: inline-block;
       stroke: $dark;
     }
   }
