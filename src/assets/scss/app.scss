@@ -144,6 +144,7 @@ body {
     @include media-breakpoint-down(md) {
       @include font-size(0.9rem);
     }
+    font-weight: $font-weight-normal;
     color: $dark;
   }
 
