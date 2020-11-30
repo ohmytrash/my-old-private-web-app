@@ -5,7 +5,13 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    darkMode: false
+    darkMode: false,
+    progress: false
+  },
+  getters: {
+    routeProgress(state) {
+      return state.progress
+    }
   },
   mutations: {
     setDarkMode(state, payload) {
@@ -17,6 +23,9 @@ export default new Vuex.Store({
         document.body.classList.remove('dark-mode')
         localStorage.removeItem('dark-mode')
       }
+    },
+    setTransition(state, progress) {
+      state.progress = progress
     }
   },
   actions: {

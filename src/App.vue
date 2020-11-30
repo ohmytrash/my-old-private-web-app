@@ -2,21 +2,23 @@
   <div id="app" ref="app">
     <Noise />
     <Navigation class="navigation" />
-    <transition name="fade">
+    <RootTransition>
       <router-view class="page" />
-    </transition>
+    </RootTransition>
   </div>
 </template>
 
 <script>
 import Navigation from '@/components/Navigation'
 import Noise from '@/components/Noise'
+import RootTransition from '@/components/RootTransition'
 import { isMobile } from '@/utils/layer'
 export default {
   name: 'App',
   components: {
     Navigation,
-    Noise
+    Noise,
+    RootTransition
   },
   data() {
     return {
