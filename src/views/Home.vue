@@ -60,7 +60,7 @@ export default {
     position: relative;
     @include font-size(6rem);
     color: $dark;
-    font-weight: $font-weight-light;
+    font-weight: $font-weight-bold;
     margin-bottom: 1rem;
     span {
       white-space: normal;
