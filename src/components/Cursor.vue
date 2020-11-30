@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import { isMobile } from '../utils/layer'
+import { isMobile } from '@/utils'
 export default {
   name: 'CursorFollower',
   data() {

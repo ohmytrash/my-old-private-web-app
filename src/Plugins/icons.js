@@ -5,10 +5,6 @@ import Grid from 'feather-icons/dist/icons/grid.svg'
 import Mail from 'feather-icons/dist/icons/mail.svg'
 import Moon from 'feather-icons/dist/icons/moon.svg'
 import Sun from 'feather-icons/dist/icons/sun.svg'
-import Github from 'feather-icons/dist/icons/github.svg'
-import Instagram from 'feather-icons/dist/icons/instagram.svg'
-import Dribbble from 'feather-icons/dist/icons/dribbble.svg'
-import Youtube from 'feather-icons/dist/icons/youtube.svg'
 
 const icons = {
   install(Vue) {
@@ -19,10 +15,6 @@ const icons = {
     Vue.component('MailIcon', Mail)
     Vue.component('MoonIcon', Moon)
     Vue.component('SunIcon', Sun)
-    Vue.component('GithubIcon', Github)
-    Vue.component('InstagramIcon', Instagram)
-    Vue.component('DribbbleIcon', Dribbble)
-    Vue.component('YoutubeIcon', Youtube)
   }
 }
 

@@ -44,7 +44,7 @@ export default {
   },
   computed: {
     contact() {
-      return this.$store.state.config.contact
+      return this.$store.getters.config.contact
     }
   }
 }

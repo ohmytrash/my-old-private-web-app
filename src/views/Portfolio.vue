@@ -18,7 +18,7 @@ export default {
   },
   computed: {
     portfolio() {
-      return this.$store.state.config.portfolio
+      return this.$store.getters.config.portfolio
     }
   }
 }

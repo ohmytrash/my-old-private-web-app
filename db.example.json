@@ -9,7 +9,7 @@
   },
   "home": {
     "title": "HOME",
-    "description": "no commet",
+    "description": "My awesome web app.",
     "app_name": "DEDEARD",
     "app_title": "PHOTOGRAPHY FROM MAKASSAR, INDONESIA.",
     "bg_url": "https://picsum.photos/id/1012/300/300",
@@ -39,17 +39,17 @@
       "title": "My Experience.",
       "items": [{
           "title": "Designer at company",
-          "date": "2015 May - 2019 April",
+          "date": "2015 May - 2020 April",
           "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, vero exercitationem dolores quam ipsum earum vel sed dolor,\n          odio sint vitae amet excepturi recusandae nulla, unde accusantium quia velit accusamus."
         },
         {
           "title": "Designer at company",
-          "date": "2015 May - 2019 April",
+          "date": "2015 May - 2020 April",
           "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, vero exercitationem dolores quam ipsum earum vel sed dolor,\n          odio sint vitae amet excepturi recusandae nulla, unde accusantium quia velit accusamus."
         },
         {
           "title": "Designer at company",
-          "date": "2015 May - 2019 April",
+          "date": "2015 May - 2020 April",
           "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, vero exercitationem dolores quam ipsum earum vel sed dolor,\n          odio sint vitae amet excepturi recusandae nulla, unde accusantium quia velit accusamus."
         }
       ]
@@ -58,7 +58,7 @@
   "portfolio": {
     "label": "Portfolio.",
     "title": "PORTFOLIO",
-    "description": "no commet",
+    "description": "My awesome web app.",
     "items": [{
         "category": "Mockup",
         "img": "https://picsum.photos/400/400",
@@ -118,7 +118,7 @@
   "contact": {
     "label": "Contact.",
     "title": "CONTACT",
-    "description": "no commet",
+    "description": "My awesome web app.",
     "info": [{
         "label": "ADDRESS STREET",
         "items": ["Address : No 221B Down Street", "Landon, United Kingdom."]

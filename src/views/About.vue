@@ -39,7 +39,7 @@ export default {
   },
   computed: {
     about() {
-      return this.$store.state.config.about
+      return this.$store.getters.config.about
     }
   }
 }

@@ -31,7 +31,7 @@ module.exports = {
           }
         },
         {
-          urlPattern: new RegExp('/img/icons/|favicon'),
+          urlPattern: new RegExp('/img/icons/|favicon|.(png|gif|jpg|jpeg|svg)'),
           handler: 'cacheFirst',
           options: {
             cacheName: 'icons'

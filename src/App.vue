@@ -2,9 +2,9 @@
   <div id="app" ref="app">
     <Noise />
     <CursorFollower />
-    <RootTransition>
+    <SlideYUpTransition :duration="800" :delay="1500">
       <Loading v-if="loading" />
-    </RootTransition>
+    </SlideYUpTransition>
     <Navigation class="navigation" />
     <RootTransition>
       <router-view class="page" />
@@ -18,8 +18,9 @@ import Noise from '@/components/Noise'
 import RootTransition from '@/components/RootTransition'
 import Loading from '@/components/BootLoading'
 import CursorFollower from '@/components/Cursor'
+import { SlideYUpTransition } from 'vue2-transitions'
 
-import { isMobile } from '@/utils/layer'
+import { isMobile } from '@/utils'
 export default {
   name: 'App',
   metaInfo() {
@@ -27,7 +28,7 @@ export default {
   },
   computed: {
     config() {
-      return this.$store.state.config[this.$route.name.toLowerCase()] || {}
+      return this.$store.getters.config[this.$route.name.toLowerCase()] || {}
     },
     meta() {
       return {
@@ -47,7 +48,8 @@ export default {
     Noise,
     RootTransition,
     Loading,
-    CursorFollower
+    CursorFollower,
+    SlideYUpTransition
   },
   data() {
     return {
@@ -69,15 +71,10 @@ export default {
   mounted() {
     this.onWindowResize()
     this.listener = window.addEventListener('resize', this.onWindowResize)
-    fetch('https://my-json-server.typicode.com/dedeardiansya/db/db')
-      .then(res => {
-        return res.json()
-      })
-      .then(data => {
-        this.$store.commit('setConfig', data)
-        setTimeout(() => {
-          this.loading = false
-        }, 500)
+    this.$store
+      .dispatch('loadConfig')
+      .then(() => {
+        this.loading = false
       })
       .catch(e => {
         // eslint-disable-next-line no-console

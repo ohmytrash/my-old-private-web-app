@@ -9,7 +9,8 @@
       </div>
     </span>
     <router-link :to="{ name: 'Home' }" class="navigation-link brand mb-auto mr-auto" :title="navigation.home">
-      <BrandIcon width="30" />
+      <!-- <BrandIcon width="30" /> -->
+      <img src="@/assets/img/brand.png" alt="logo dedeard" height="30" />
     </router-link>
     <router-link :to="{ name: 'Home' }" exact-active-class="active" class="navigation-link d-none d-md-block" :title="navigation.home">
       <HomeIcon width="18" />
@@ -27,9 +28,9 @@
       href="#"
       @click.prevent="changeTheme"
       class="navigation-link mt-auto ml-auto"
-      :title="$store.state.darkMode ? navigation.light_mode : navigation.dark_mode"
+      :title="$store.getters.isDarkMode ? navigation.light_mode : navigation.dark_mode"
     >
-      <MoonIcon width="18" v-if="!$store.state.darkMode" />
+      <MoonIcon width="18" v-if="!$store.getters.isDarkMode" />
       <SunIcon width="18" v-else />
     </a>
   </nav>
@@ -41,7 +42,7 @@ export default {
   name: 'Navigation',
   computed: {
     navigation() {
-      return this.$store.state.config.navigation
+      return this.$store.getters.config.navigation
     }
   },
   methods: {

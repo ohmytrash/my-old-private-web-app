@@ -119,10 +119,13 @@ body {
   }
   &__title {
     position: relative;
-    @include font-size(6rem);
     color: $dark;
     font-weight: $font-weight-bold;
     margin-bottom: 1rem;
+    @include font-size(8rem);
+    @include media-breakpoint-down(md) {
+      @include font-size(6rem);
+    }
     span {
       white-space: normal;
       position: absolute;

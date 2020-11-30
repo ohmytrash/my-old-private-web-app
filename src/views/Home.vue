@@ -17,7 +17,7 @@ export default {
   name: 'Home',
   computed: {
     home() {
-      return this.$store.state.config.home
+      return this.$store.getters.config.home
     }
   }
 }
