@@ -2,9 +2,15 @@
   <div class="container portfolio-filter">
     <div class="nav">
       <a href="#" @click.prevent="select = 'all'" :class="{ active: select == 'all' }" class="nav-link">All</a>
-      <a href="#" @click.prevent="select = 'Mockup'" :class="{ active: select == 'Mockup' }" class="nav-link">Mockup</a>
-      <a href="#" @click.prevent="select = 'Busines'" :class="{ active: select == 'Busines' }" class="nav-link">Busines</a>
-      <a href="#" @click.prevent="select = 'Design'" :class="{ active: select == 'Design' }" class="nav-link">Design</a>
+      <a
+        href="#"
+        @click.prevent="select = item"
+        :class="{ active: select == item }"
+        class="nav-link"
+        v-for="(item, i) in categories"
+        :key="i"
+        >{{ item }}</a
+      >
     </div>
     <ZoomCenterTransition tag="div" class="row mb-5" group>
       <!-- eslint-disable-next-line vue/no-use-v-if-with-v-for -->
@@ -13,7 +19,7 @@
           <img :src="item.img + '?id=' + i" alt="img" class="img-fluid d-block" />
           <div class="overlay-wrap">
             <div class="overlay-wrap__content">
-              <span>{{ item.text }}</span>
+              <span class="text-light">{{ item.text }}</span>
               <a :href="item.url" target="_blank" class="btn btn-outline-light">DETAIL</a>
             </div>
           </div>
@@ -38,7 +44,19 @@ export default {
   },
   data() {
     return {
-      select: 'all'
+      select: 'all',
+      categories: []
+    }
+  },
+  watch: {
+    items: {
+      deep: true,
+      immediate: true,
+      handler(val) {
+        if (val.length) {
+          this.categories = [...new Set(val.map(item => item.category))]
+        }
+      }
     }
   }
 }

@@ -72,7 +72,9 @@ export default {
       })
       .then(data => {
         this.$store.commit('setConfig', data)
-        this.loading = false
+        setTimeout(() => {
+          this.loading = false
+        }, 500)
       })
       .catch(e => {
         // eslint-disable-next-line no-console

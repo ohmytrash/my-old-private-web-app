@@ -2,7 +2,7 @@
   "navigation": {
     "home": "HOME",
     "about": "ABOUT",
-    "potfolio": "PORTFOLIO",
+    "portfolio": "PORTFOLIO",
     "contact": "CONTACT",
     "dark_mode": "DARK MODE",
     "light_mode": "LIGHT MODE"

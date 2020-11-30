@@ -1,29 +1,34 @@
 <template>
-  <nav class="navigation">
+  <nav class="navigation" v-if="navigation">
     <span class="change-theme-transition" aria-hidden="true" ref="transition">
       <div class="m-auto">
         <p class="lead">
-          <span class="text-dark">LIGHT MODE -</span>
-          <span class="text-light">- DARK MODE</span>
+          <span class="text-dark">{{ navigation.light_mode }} -</span>
+          <span class="text-light">- {{ navigation.dark_mode }}</span>
         </p>
       </div>
     </span>
-    <router-link :to="{ name: 'Home' }" class="navigation-link brand mb-auto mr-auto" title="Home">
+    <router-link :to="{ name: 'Home' }" class="navigation-link brand mb-auto mr-auto" :title="navigation.home">
       <BrandIcon width="30" />
     </router-link>
-    <router-link :to="{ name: 'Home' }" exact-active-class="active" class="navigation-link d-none d-md-block" title="Home">
+    <router-link :to="{ name: 'Home' }" exact-active-class="active" class="navigation-link d-none d-md-block" :title="navigation.home">
       <HomeIcon width="18" />
     </router-link>
-    <router-link :to="{ name: 'About' }" exact-active-class="active" class="navigation-link" title="About">
+    <router-link :to="{ name: 'About' }" exact-active-class="active" class="navigation-link" :title="navigation.about">
       <UserIcon width="18" />
     </router-link>
-    <router-link :to="{ name: 'Portfolio' }" exact-active-class="active" class="navigation-link" title="Portfolio">
+    <router-link :to="{ name: 'Portfolio' }" exact-active-class="active" class="navigation-link" :title="navigation.portfolio">
       <GridIcon width="18" />
     </router-link>
-    <router-link :to="{ name: 'Contact' }" exact-active-class="active" class="navigation-link" title="Contact">
+    <router-link :to="{ name: 'Contact' }" exact-active-class="active" class="navigation-link" :title="navigation.contact">
       <MailIcon width="18" />
     </router-link>
-    <a href="#" @click.prevent="changeTheme" class="navigation-link mt-auto ml-auto" title="Night Mode">
+    <a
+      href="#"
+      @click.prevent="changeTheme"
+      class="navigation-link mt-auto ml-auto"
+      :title="$store.state.darkMode ? navigation.light_mode : navigation.dark_mode"
+    >
       <MoonIcon width="18" v-if="!$store.state.darkMode" />
       <SunIcon width="18" v-else />
     </a>
@@ -34,6 +39,11 @@
 import anime from 'animejs'
 export default {
   name: 'Navigation',
+  computed: {
+    navigation() {
+      return this.$store.state.config.navigation
+    }
+  },
   methods: {
     changeTheme() {
       this.$refs.transition.style.transform = 'translateY(-110%)'
