@@ -55,9 +55,8 @@ body {
     padding-left: 0px;
     padding-bottom: 60px;
   }
-
   &.dark-mode {
-    background-color: $white;
+    background-color: darken($gray-900, 5%);
     color: $gray-100;
   }
 }
@@ -103,7 +102,6 @@ body {
     background-repeat: no-repeat;
     filter: grayscale(50%);
     opacity: 0.4;
-
     @include media-breakpoint-down(md) {
       width: calc(100% - 30px);
       height: calc(100% - 30px);
@@ -111,7 +109,6 @@ body {
       left: 15px;
     }
   }
-
   &__wrapper {
     position: relative;
     margin: auto;
@@ -120,7 +117,6 @@ body {
     text-align: center;
     padding: 15px;
   }
-
   &__title {
     position: relative;
     @include font-size(6rem);
@@ -170,11 +166,9 @@ body {
     &__title {
       color: $white;
     }
-  
     &__subtitle {
       color: $white;
     }
-  
     &__socials {
       a {
         color: $gray-200;
@@ -207,7 +201,6 @@ body {
   top: 0;
   width: 100vw;
   z-index: 99999;
-
   canvas {
     height: 100vh;
     width: 100vw;
@@ -232,7 +225,6 @@ body {
   &::-webkit-scrollbar {
     width: 0px;
   }
-
   @include media-breakpoint-down(md) {
     height: 60px;
     width: 100%;
@@ -240,7 +232,6 @@ body {
     top: auto;
     flex-direction: row;
   }
-
   .navigation-link {
     position: relative;
     display: block;
@@ -250,12 +241,10 @@ body {
     line-height: 30px;
     text-align: center;
     color: $gray-500;
-
     &.brand {
       background-color: rgba($gray-100, 0.5);
       color: $primary;
     }
-
     &.active,
     &:hover {
       color: $primary;
@@ -265,15 +254,12 @@ body {
 .dark-mode {
   .navigation {
     background-color: $gray-800;
-  
     .navigation-link {
       color: $gray-300;
-  
       &.brand {
         background-color: rgba($gray-900, 0.5);
         color: $primary;
       }
-  
       &.active,
       &:hover {
         color: $primary;
@@ -292,7 +278,6 @@ body {
   @include media-breakpoint-down(md) {
     @include font-size(7rem);
   }
-
   span {
     position: absolute;
     left: 0;
@@ -313,17 +298,14 @@ body {
     &:first-child {
       padding-left: 0;
     }
-  
     &:hover,
     &.active {
       color: $primary;
     }
   }
-  
   .img-wrap {
     position: relative;
     overflow: hidden;
-  
     .overlay-wrap {
       background-color: rgba($dark, 0.7);
       position: absolute;
@@ -333,7 +315,6 @@ body {
       display: flex;
       transition: transform 500ms ease-out;
       transform: translateY(-100%);
-  
       .btn {
         margin: auto;
         opacity: 0;
@@ -342,11 +323,9 @@ body {
         transition-delay: 400ms;
       }
     }
-  
     &:hover {
       .overlay-wrap {
         transform: translateY(0%);
-  
         .btn {
           opacity: 1;
           transform: translateY(0%);

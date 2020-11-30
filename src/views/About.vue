@@ -25,7 +25,7 @@
         <div class="col-lg-4 d-flex h-auto ">
           <div class="card card-body bg-transparent w-100 mb-3">
             <h3>Designer at company</h3>
-            <date class="small d-block font-weight-bold mb-3">2015 May - 2019 April</date>
+            <small class="small d-block font-weight-bold mb-3">2015 May - 2019 April</small>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, vero exercitationem dolores quam ipsum earum vel sed dolor,
               odio sint vitae amet excepturi recusandae nulla, unde accusantium quia velit accusamus.
@@ -35,7 +35,7 @@
         <div class="col-lg-4 d-flex h-auto ">
           <div class="card card-body bg-transparent w-100 mb-3">
             <h3>Designer at company</h3>
-            <date class="small d-block font-weight-bold mb-3">2015 May - 2019 April</date>
+            <small class="small d-block font-weight-bold mb-3">2015 May - 2019 April</small>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, vero exercitationem dolores quam ipsum earum vel sed dolor,
             </p>
@@ -44,7 +44,7 @@
         <div class="col-lg-4 d-flex h-auto ">
           <div class="card card-body bg-transparent w-100 mb-3">
             <h3>Designer at company</h3>
-            <date class="small d-block font-weight-bold mb-3">2015 May - 2019 April</date>
+            <small class="small d-block font-weight-bold mb-3">2015 May - 2019 April</small>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, vero
               exercitationem dolores quam ipsum earum vel sed dolor,
@@ -62,6 +62,11 @@ export default {
   name: 'About',
   components: {
     PageTitle
+  },
+  mounted() {
+    this.$refs.scroll.addEventListener('scroll', () => {
+      console.log('scroll')
+    })
   }
 }
 </script>
