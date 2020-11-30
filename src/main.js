@@ -9,6 +9,8 @@ Vue.config.productionTip = false
 
 Vue.use(plugins)
 
+store.dispatch('loadTheme')
+
 new Vue({
   router,
   store,

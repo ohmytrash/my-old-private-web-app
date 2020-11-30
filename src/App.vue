@@ -1,5 +1,6 @@
 <template>
   <div id="app" ref="app">
+    <Noise />
     <Navigation class="navigation" />
     <transition name="fade">
       <router-view class="page" />
@@ -9,11 +10,13 @@
 
 <script>
 import Navigation from '@/components/Navigation'
+import Noise from '@/components/Noise'
 import { isMobile } from '@/utils/layer'
 export default {
   name: 'App',
   components: {
-    Navigation
+    Navigation,
+    Noise
   },
   data() {
     return {
@@ -23,7 +26,7 @@ export default {
   methods: {
     onWindowResize() {
       if (isMobile()) {
-        this.$refs.app.style.height = window.innerHeight - 60 + 'px'
+        this.$refs.app.style.height = window.innerHeight - 59 + 'px'
         this.$refs.app.style.width = window.innerWidth + 'px'
       } else {
         this.$refs.app.style.height = window.innerHeight + 'px'
@@ -40,38 +43,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-html,
-body {
-  width: 100%;
-  min-height: 100vh;
-  scrollbar-width: none;
-  &::-webkit-scrollbar {
-    width: 0px;
-  }
-}
-
-body {
-  padding-left: 60px;
-  background-color: $gray-900;
-  @include media-breakpoint-down(md) {
-    padding-left: 0px;
-    padding-bottom: 60px;
-  }
-}
-
-#app {
-  position: relative;
-  overflow: hidden;
-}
-
-.page {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
-  background-color: $gray-100;
-}
-</style>

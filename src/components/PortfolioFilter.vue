@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container portfolio-filter">
     <div class="nav">
       <a href="#" @click.prevent="select = 'all'" :class="{ active: select == 'all' }" class="nav-link">All</a>
       <a href="#" @click.prevent="select = 'Mockup'" :class="{ active: select == 'Mockup' }" class="nav-link">Mockup</a>
@@ -72,55 +72,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.nav {
-  padding: 0;
-}
-.nav-link {
-  color: $gray-700;
-  &:first-child {
-    padding-left: 0;
-  }
-
-  &:hover,
-  &.active {
-    color: $primary;
-  }
-}
-
-.img-wrap {
-  position: relative;
-  overflow: hidden;
-
-  .overlay-wrap {
-    background-color: rgba($dark, 0.7);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    display: flex;
-    transition: transform 500ms ease-out;
-    transform: translateY(-100%);
-
-    .btn {
-      margin: auto;
-      opacity: 0;
-      transform: translateY(100%);
-      transition: 300ms ease-out;
-      transition-delay: 400ms;
-    }
-  }
-
-  &:hover {
-    .overlay-wrap {
-      transform: translateY(0%);
-
-      .btn {
-        opacity: 1;
-        transform: translateY(0%);
-      }
-    }
-  }
-}
-</style>

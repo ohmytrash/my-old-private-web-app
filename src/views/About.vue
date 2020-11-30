@@ -14,7 +14,7 @@
             ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
             magnam aliquam quaerat voluptatem.
           </p>
-          <a href="#" class="btn btn-outline-dark">RESUME</a>
+          <a href="#" class="btn btn-dark">DOWNLOAD CV</a>
         </div>
       </div>
     </div>
@@ -23,7 +23,7 @@
 
       <div class="row flex-wrap">
         <div class="col-lg-4 d-flex h-auto ">
-          <div class="card card-body bg-light w-100 mb-3">
+          <div class="card card-body bg-transparent w-100 mb-3">
             <h3>Designer at company</h3>
             <date class="small d-block font-weight-bold mb-3">2015 May - 2019 April</date>
             <p>
@@ -33,7 +33,7 @@
           </div>
         </div>
         <div class="col-lg-4 d-flex h-auto ">
-          <div class="card card-body bg-light w-100 mb-3">
+          <div class="card card-body bg-transparent w-100 mb-3">
             <h3>Designer at company</h3>
             <date class="small d-block font-weight-bold mb-3">2015 May - 2019 April</date>
             <p>
@@ -42,7 +42,7 @@
           </div>
         </div>
         <div class="col-lg-4 d-flex h-auto ">
-          <div class="card card-body bg-light w-100 mb-3">
+          <div class="card card-body bg-transparent w-100 mb-3">
             <h3>Designer at company</h3>
             <date class="small d-block font-weight-bold mb-3">2015 May - 2019 April</date>
             <p>
