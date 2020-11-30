@@ -1,5 +1,13 @@
 <template>
   <nav class="navigation">
+    <span class="change-theme-transition" aria-hidden="true" ref="transition">
+      <div class="m-auto">
+        <p class="lead">
+          <span class="text-dark">LIGHT MODE -</span>
+          <span class="text-light">- DARK MODE</span>
+        </p>
+      </div>
+    </span>
     <router-link :to="{ name: 'Home' }" class="navigation-link brand mb-auto mr-auto" title="Home">
       <BrandIcon width="30" />
     </router-link>
@@ -23,11 +31,28 @@
 </template>
 
 <script>
+import anime from 'animejs'
 export default {
   name: 'Navigation',
   methods: {
     changeTheme() {
-      this.$store.dispatch('toggleTheme')
+      this.$refs.transition.style.transform = 'translateY(-110%)'
+      anime
+        .timeline({
+          targets: this.$refs.transition,
+          duration: 1000,
+          easing: 'easeInOutCirc'
+        })
+        .add({
+          translateY: '0%',
+          complete: () => {
+            this.$store.dispatch('toggleTheme')
+          }
+        })
+        .add({
+          delay: 750,
+          translateY: '110%'
+        })
     }
   }
 }
