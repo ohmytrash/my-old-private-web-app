@@ -1,7 +1,9 @@
 <template>
   <div class="home-page">
     <div class="home-page__wrapper">
-      <h1 class="home-page__title">DEDEARD <span aria-hidden="true">DEDEARD</span></h1>
+      <h1 class="home-page__title">
+        {{ $t('app_name') }} <span aria-hidden="true">{{ $t('app_name') }}</span>
+      </h1>
       <p class="home-page__subtitle mb-5 text-uppercase">Web developer from makassar indonesia</p>
       <div class="home-page__socials">
         <a href="#">BEHENCE</a>
