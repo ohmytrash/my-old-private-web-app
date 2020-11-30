@@ -16,9 +16,30 @@ import Navigation from '@/components/Navigation'
 import Noise from '@/components/Noise'
 import RootTransition from '@/components/RootTransition'
 import Loading from '@/components/BootLoading'
+
 import { isMobile } from '@/utils/layer'
 export default {
   name: 'App',
+  metaInfo() {
+    return this.meta
+  },
+  computed: {
+    config() {
+      return this.$store.state.config[this.$route.name.toLowerCase()] || {}
+    },
+    meta() {
+      return {
+        title: this.config.title,
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: this.config.description
+          }
+        ]
+      }
+    }
+  },
   components: {
     Navigation,
     Noise,
@@ -45,9 +66,18 @@ export default {
   mounted() {
     this.onWindowResize()
     this.listener = window.addEventListener('resize', this.onWindowResize)
-    setTimeout(() => {
-      this.loading = false
-    }, 3000)
+    fetch('https://my-json-server.typicode.com/dedeardiansya/db/db')
+      .then(res => {
+        return res.json()
+      })
+      .then(data => {
+        this.$store.commit('setConfig', data)
+        this.loading = false
+      })
+      .catch(e => {
+        // eslint-disable-next-line no-console
+        console.log(e)
+      })
   },
   beforeDestroy() {
     window.removeEventListener('resize', this.onWindowResize)

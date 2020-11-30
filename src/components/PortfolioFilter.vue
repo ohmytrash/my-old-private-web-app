@@ -12,7 +12,10 @@
         <div class="img-wrap">
           <img :src="item.img + '?id=' + i" alt="img" class="img-fluid d-block" />
           <div class="overlay-wrap">
-            <a href="#" class="btn btn-outline-light">DETAIL</a>
+            <div class="overlay-wrap__content">
+              <span>{{ item.text }}</span>
+              <a :href="item.url" target="_blank" class="btn btn-outline-light">DETAIL</a>
+            </div>
           </div>
         </div>
       </div>
@@ -27,47 +30,15 @@ export default {
   components: {
     ZoomCenterTransition
   },
+  props: {
+    items: {
+      type: Array,
+      default: () => []
+    }
+  },
   data() {
     return {
-      select: 'all',
-      items: [
-        {
-          category: 'Mockup',
-          img: 'https://picsum.photos/400/400'
-        },
-        {
-          category: 'Busines',
-          img: 'https://picsum.photos/400/400'
-        },
-        {
-          category: 'Mockup',
-          img: 'https://picsum.photos/400/400'
-        },
-        {
-          category: 'Design',
-          img: 'https://picsum.photos/400/400'
-        },
-        {
-          category: 'Busines',
-          img: 'https://picsum.photos/400/400'
-        },
-        {
-          category: 'Busines',
-          img: 'https://picsum.photos/400/400'
-        },
-        {
-          category: 'Mockup',
-          img: 'https://picsum.photos/400/400'
-        },
-        {
-          category: 'Busines',
-          img: 'https://picsum.photos/400/400'
-        },
-        {
-          category: 'Design',
-          img: 'https://picsum.photos/400/400'
-        }
-      ]
+      select: 'all'
     }
   }
 }

@@ -1,14 +1,12 @@
 <template>
-  <div class="home-page">
+  <div class="home-page" v-if="home" :style="`--bg-image: url(${home.bg_url})`">
     <div class="home-page__wrapper">
       <h1 class="home-page__title">
-        {{ $t('app_name') }} <span aria-hidden="true">{{ $t('app_name') }}</span>
+        {{ home.app_name }} <span aria-hidden="true">{{ home.app_name }}</span>
       </h1>
-      <p class="home-page__subtitle mb-5 text-uppercase">Web developer from makassar indonesia</p>
+      <p class="home-page__subtitle mb-5 text-uppercase">{{ home.app_title }}</p>
       <div class="home-page__socials">
-        <a href="#">BEHENCE</a>
-        <a href="#">INSTAGRAM</a>
-        <a href="#">DRIBBBLE</a>
+        <a :href="item.url" target="_blank" v-for="(item, i) in home.socials" :key="i">{{ item.label }}</a>
       </div>
     </div>
   </div>
@@ -16,6 +14,11 @@
 
 <script>
 export default {
-  name: 'Home'
+  name: 'Home',
+  computed: {
+    home() {
+      return this.$store.state.config.home
+    }
+  }
 }
 </script>

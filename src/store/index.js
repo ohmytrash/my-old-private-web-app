@@ -6,7 +6,8 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     darkMode: false,
-    progress: false
+    progress: false,
+    config: {}
   },
   getters: {
     routeProgress(state) {
@@ -26,6 +27,9 @@ export default new Vuex.Store({
     },
     setTransition(state, progress) {
       state.progress = progress
+    },
+    setConfig(state, payload) {
+      state.config = payload
     }
   },
   actions: {

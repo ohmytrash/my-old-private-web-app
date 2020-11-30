@@ -1,5 +1,4 @@
 import Vue from 'vue'
-import VueI18n from 'vue-i18n'
 import App from '@/App'
 import '@/registerServiceWorker'
 import router from '@/router'
@@ -12,18 +11,8 @@ Vue.use(plugins)
 
 store.dispatch('loadTheme')
 
-Vue.use(VueI18n)
-
-const i18n = new VueI18n({
-  locale: 'default',
-  messages: {
-    default: require('./lang.json')
-  }
-})
-
 new Vue({
   router,
   store,
-  i18n,
   render: h => h(App)
 }).$mount('#app')

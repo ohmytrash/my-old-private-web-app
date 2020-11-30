@@ -1,9 +1,9 @@
 <template>
-  <div class="portfolio-page py-4">
+  <div class="portfolio-page py-4" v-if="portfolio">
     <div class="container">
-      <PageTitle>Portfolio.</PageTitle>
+      <PageTitle>{{ portfolio.label }}</PageTitle>
     </div>
-    <PortfolioFilter />
+    <PortfolioFilter :items="portfolio.items" />
   </div>
 </template>
 
@@ -15,6 +15,11 @@ export default {
   components: {
     PageTitle,
     PortfolioFilter
+  },
+  computed: {
+    portfolio() {
+      return this.$store.state.config.portfolio
+    }
   }
 }
 </script>

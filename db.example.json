@@ -1,0 +1,137 @@
+{
+  "navigation": {
+    "home": "HOME",
+    "about": "ABOUT",
+    "potfolio": "PORTFOLIO",
+    "contact": "CONTACT",
+    "dark_mode": "DARK MODE",
+    "light_mode": "LIGHT MODE"
+  },
+  "home": {
+    "title": "HOME",
+    "description": "no commet",
+    "app_name": "DEDEARD",
+    "app_title": "PHOTOGRAPHY FROM MAKASSAR, INDONESIA.",
+    "bg_url": "https://picsum.photos/id/1012/300/300",
+    "socials": [{
+        "label": "INSTAGRAM",
+        "url": "#"
+      },
+      {
+        "label": "FACEBOOK",
+        "url": "#"
+      },
+      {
+        "label": "GITHUB",
+        "url": "#"
+      }
+    ]
+  },
+  "about": {
+    "label": "About.",
+    "title": "ABOUT",
+    "description": "no comment",
+    "name": "I’m Dede Ardiansya",
+    "paragraph": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa\n    quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Neque porro quisquam est, qui dolorem\n    ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore\n    magnam aliquam quaerat voluptatem.",
+    "img_url": "https://picsum.photos/id/1005/300/300",
+    "cv_url": "#",
+    "experience": {
+      "title": "My Experience.",
+      "items": [{
+          "title": "Designer at company",
+          "date": "2015 May - 2019 April",
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, vero exercitationem dolores quam ipsum earum vel sed dolor,\n          odio sint vitae amet excepturi recusandae nulla, unde accusantium quia velit accusamus."
+        },
+        {
+          "title": "Designer at company",
+          "date": "2015 May - 2019 April",
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, vero exercitationem dolores quam ipsum earum vel sed dolor,\n          odio sint vitae amet excepturi recusandae nulla, unde accusantium quia velit accusamus."
+        },
+        {
+          "title": "Designer at company",
+          "date": "2015 May - 2019 April",
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, vero exercitationem dolores quam ipsum earum vel sed dolor,\n          odio sint vitae amet excepturi recusandae nulla, unde accusantium quia velit accusamus."
+        }
+      ]
+    }
+  },
+  "portfolio": {
+    "label": "Portfolio.",
+    "title": "PORTFOLIO",
+    "description": "no commet",
+    "items": [{
+        "category": "Mockup",
+        "img": "https://picsum.photos/400/400",
+        "text": "Lorem ipsum dolor",
+        "url": "#"
+      },
+      {
+        "category": "Busines",
+        "img": "https://picsum.photos/400/400",
+        "text": "Lorem ipsum dolor",
+        "url": "#"
+      },
+      {
+        "category": "Mockup",
+        "img": "https://picsum.photos/400/400",
+        "text": "Lorem ipsum dolor",
+        "url": "#"
+      },
+      {
+        "category": "Design",
+        "img": "https://picsum.photos/400/400",
+        "text": "Lorem ipsum dolor",
+        "url": "#"
+      },
+      {
+        "category": "Busines",
+        "img": "https://picsum.photos/400/400",
+        "text": "Lorem ipsum dolor",
+        "url": "#"
+      },
+      {
+        "category": "Busines",
+        "img": "https://picsum.photos/400/400",
+        "text": "Lorem ipsum dolor",
+        "url": "#"
+      },
+      {
+        "category": "Mockup",
+        "img": "https://picsum.photos/400/400",
+        "text": "Lorem ipsum dolor",
+        "url": "#"
+      },
+      {
+        "category": "Busines",
+        "img": "https://picsum.photos/400/400",
+        "text": "Lorem ipsum dolor",
+        "url": "#"
+      },
+      {
+        "category": "Design",
+        "img": "https://picsum.photos/400/400",
+        "text": "Lorem ipsum dolor",
+        "url": "#"
+      }
+    ]
+  },
+  "contact": {
+    "label": "Contact.",
+    "title": "CONTACT",
+    "description": "no commet",
+    "info": [{
+        "label": "ADDRESS STREET",
+        "items": ["Address : No 221B Down Street", "Landon, United Kingdom."]
+      },
+      {
+        "label": "MOBILE PHONE",
+        "items": ["Phone 1: 0(1234) 567 890", "Phone 2: 0(987) 567 890"]
+      },
+      {
+        "label": "ADDRESS EMAIL",
+        "items": ["info@yourdomain.com", "work@yourdomain.com"]
+      }
+    ],
+    "form_url": "https://formspree.io/f/xrgoayzw"
+  }
+}
