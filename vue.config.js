@@ -18,5 +18,33 @@ module.exports = {
       .end()
       .use('svg-to-vue-component')
       .loader('svg-to-vue-component/loader')
+  },
+  pwa: {
+    manifestPath: 'manifest.json',
+    workboxOptions: {
+      runtimeCaching: [
+        {
+          urlPattern: new RegExp('https://fonts.'),
+          handler: 'cacheFirst',
+          options: {
+            cacheName: 'fonts'
+          }
+        },
+        {
+          urlPattern: new RegExp('/img/icons/|favicon'),
+          handler: 'cacheFirst',
+          options: {
+            cacheName: 'icons'
+          }
+        },
+        {
+          urlPattern: new RegExp('https://my-json-server.'),
+          handler: 'networkFirst',
+          options: {
+            cacheName: 'api-cache'
+          }
+        }
+      ]
+    }
   }
 }
