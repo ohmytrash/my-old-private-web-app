@@ -1,6 +1,7 @@
 <template>
   <div id="app" ref="app">
     <Noise />
+    <CursorFollower />
     <RootTransition>
       <Loading v-if="loading" />
     </RootTransition>
@@ -16,6 +17,7 @@ import Navigation from '@/components/Navigation'
 import Noise from '@/components/Noise'
 import RootTransition from '@/components/RootTransition'
 import Loading from '@/components/BootLoading'
+import CursorFollower from '@/components/Cursor'
 
 import { isMobile } from '@/utils/layer'
 export default {
@@ -44,7 +46,8 @@ export default {
     Navigation,
     Noise,
     RootTransition,
-    Loading
+    Loading,
+    CursorFollower
   },
   data() {
     return {
