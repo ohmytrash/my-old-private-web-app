@@ -381,8 +381,8 @@ body {
 // Cursor follower
 .cursor {
   display: block;
-  background-color: rgba($dark, 0.5);
-  border: 2px solid rgba($dark, 0.5);
+  border: 2px solid $white;
+  mix-blend-mode: difference;
   border-radius: 50%;
   height: 30px;
   opacity: 0;
@@ -397,20 +397,7 @@ body {
   }
 
   &.link {
-    background-color: rgba($yellow, 0.2);
-    border: 2px solid rgba($yellow, 1);
-    transform: scale(3);
-  }
-}
-
-.dark-mode {
-  .cursor {
-    background-color: rgba($white, 0.5);
-    border: 2px solid rgba($white, 0.5);
-
-    &.link {
-      background-color: rgba($yellow, 0.2);
-      border: 2px solid rgba($yellow, 1);
-    }
+    border: 2px solid $yellow;
+    transform: scale(5);
   }
 }
