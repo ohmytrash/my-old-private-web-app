@@ -29,6 +29,11 @@ const routes = [
     path: '/contact',
     name: ContactPage.name,
     component: ContactPage
+  },
+  {
+    path: '*',
+    name: '404',
+    redirect: '/'
   }
 ]
 
