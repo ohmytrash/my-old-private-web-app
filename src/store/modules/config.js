@@ -1,3 +1,4 @@
+// import config from '../../../db.example.json'
 import { JSON_DB_URL } from '@/config'
 
 const state = {
@@ -12,6 +13,8 @@ const getters = {
 
 const actions = {
   loadConfig({ commit }) {
+    // commit('setConfig', config)
+    // return config
     return fetch(JSON_DB_URL)
       .then(res => {
         return res.json()

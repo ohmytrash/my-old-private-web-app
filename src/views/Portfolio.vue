@@ -3,18 +3,18 @@
     <div class="container">
       <PageTitle>{{ portfolio.label }}</PageTitle>
     </div>
-    <PortfolioFilter :items="portfolio.items" />
+    <PortfolioLists :items="portfolio.items" />
   </div>
 </template>
 
 <script>
 import PageTitle from '@/components/PageTitle'
-import PortfolioFilter from '@/components/PortfolioFilter'
+import PortfolioLists from '@/components/PortfolioLists'
 export default {
   name: 'Portfolio',
   components: {
     PageTitle,
-    PortfolioFilter
+    PortfolioLists
   },
   computed: {
     portfolio() {

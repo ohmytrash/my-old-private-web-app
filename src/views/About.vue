@@ -7,11 +7,11 @@
           <img :src="about.img_url" alt="Avatar" class="img-fluid" />
         </div>
         <div class="col-md-6 mb-3">
-          <h5>{{ about.name }}</h5>
-          <p>
-            {{ about.paragraph }}
-          </p>
-          <a :href="about.cv_url" download class="btn btn-dark" v-if="about.cv_url">DOWNLOAD CV</a>
+          <h5>{{ about.heading }}</h5>
+          <div v-html="about.body"></div>
+          <h5 class="mt-4">{{ about.id.heading }}</h5>
+          <div v-html="about.id.body"></div>
+          <router-link :to="{ name: 'Contact' }" class="btn btn-dark">Contact me</router-link>
         </div>
       </div>
     </div>

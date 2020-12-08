@@ -378,6 +378,55 @@ body {
   }
 }
 
+// portfolio lists
+.portfolio-lists {
+  a.portfolio-list {
+    display: block;
+    color: $dark;
+    margin-bottom: $spacer;
+    transition: color 200ms ease-in-out;
+    .img-wrap {
+      padding: 5px;
+      background-color: $white;
+    }
+    img {
+      filter: grayscale(100%);
+      transition: filter 200ms ease-in-out;
+    }
+    h2 {
+      margin-top: 5px;
+      margin-bottom: 0;
+      font-size: 1rem;
+      font-weight: $font-weight-bold;
+    }
+    p {
+      font-size: 12px;
+    }
+
+    @include media-breakpoint-down(md) {
+      img {
+        filter: grayscale(0%);
+      }
+    }
+
+    &:hover {
+      img {
+        filter: grayscale(0%);
+      }
+    }
+  }
+}
+.dark-mode {
+  .portfolio-lists {
+    a.portfolio-list {
+      color: $light;
+      .img-wrap {
+        background-color: $dark;
+      }
+    }
+  }
+}
+
 // Cursor follower
 .cursor {
   display: block;
