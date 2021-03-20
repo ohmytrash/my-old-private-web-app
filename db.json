@@ -1,0 +1,137 @@
+{
+  "navigation": {
+    "home": "HOME",
+    "about": "ABOUT",
+    "portfolio": "PORTFOLIO",
+    "contact": "CONTACT",
+    "dark_mode": "DARK MODE",
+    "light_mode": "LIGHT MODE"
+  },
+  "home": {
+    "title": "HOME",
+    "description": "My awesome web app.",
+    "app_name": "DEDEARD",
+    "app_title": "PHOTOGRAPHY FROM MAKASSAR, INDONESIA.",
+    "bg_url": "https://images.pexels.com/photos/2409681/pexels-photo-2409681.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1000",
+    "socials": [{
+        "label": "INSTAGRAM",
+        "url": "#"
+      },
+      {
+        "label": "FACEBOOK",
+        "url": "#"
+      },
+      {
+        "label": "GITHUB",
+        "url": "#"
+      }
+    ]
+  },
+  "about": {
+    "label": "About.",
+    "title": "ABOUT",
+    "description": "no comment",
+    "name": "I’m Dede Ardiansya",
+    "paragraph": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa\n    quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Neque porro quisquam est, qui dolorem\n    ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore\n    magnam aliquam quaerat voluptatem.",
+    "img_url": "https://images.pexels.com/photos/1342650/pexels-photo-1342650.jpeg?auto=compress&cs=tinysrgb&h=500",
+    "cv_url": "#",
+    "experience": {
+      "title": "My Experience.",
+      "items": [{
+          "title": "Designer at company",
+          "date": "2015 May - 2020 April",
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, vero exercitationem dolores quam ipsum earum vel sed dolor,\n          odio sint vitae amet excepturi recusandae nulla, unde accusantium quia velit accusamus."
+        },
+        {
+          "title": "Illustrator at company",
+          "date": "2015 May - 2020 April",
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, vero exercitationem dolores quam ipsum earum vel sed dolor,\n          odio sint vitae amet excepturi recusandae nulla, unde accusantium quia velit accusamus."
+        },
+        {
+          "title": "Phorographer at company",
+          "date": "2015 May - 2020 April",
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, vero exercitationem dolores quam ipsum earum vel sed dolor,\n          odio sint vitae amet excepturi recusandae nulla, unde accusantium quia velit accusamus."
+        }
+      ]
+    }
+  },
+  "portfolio": {
+    "label": "Portfolio.",
+    "title": "PORTFOLIO",
+    "description": "My awesome web app.",
+    "items": [{
+        "category": "Logo",
+        "text": "k bolt Logo Design",
+        "url": "https://dribbble.com/shots/14562865-k-bolt",
+        "img": "https://cdn.statically.io/img/cdn.dribbble.com/w=400,h=400/users/24078/screenshots/14562865/media/130e993838dec40962316d5fde601ec2.jpg"
+      },
+      {
+        "category": "Logo",
+        "text": "P + Box Logo Design",
+        "url": "https://dribbble.com/shots/14616165-P-Box-Logo-Design",
+        "img": "https://cdn.statically.io/img/cdn.dribbble.com/w=400,h=400/users/68544/screenshots/14616165/media/f5cce7a139d97774f722649a3af55e5e.png"
+      },
+      {
+        "category": "Logo",
+        "text": "Fobonacci 01 Logo Design",
+        "url": "https://dribbble.com/shots/11588377-fobonacci-01",
+        "img": "https://cdn.statically.io/img/cdn.dribbble.com/w=400,h=400/users/24078/screenshots/11588377/media/98f7235e173d56f168d3e9222523d42b.jpg"
+      },
+      {
+        "category": "Web",
+        "text": "Paulini Web Design",
+        "url": "https://dribbble.com/shots/14012516-Landing-Page-Paulini",
+        "img": "https://cdn.statically.io/img/cdn.dribbble.com/w=400,h=400/users/702789/screenshots/14012516/media/561a8b7e8cbe51c72c18f4ef0dc72676.png"
+      },
+      {
+        "category": "Web",
+        "text": "Yogic Shiksha Web Design",
+        "url": "https://dribbble.com/shots/14167472-Website-Design-Yogic-Shiksha",
+        "img": "https://cdn.statically.io/img/cdn.dribbble.com/w=400,h=400/users/702789/screenshots/14167472/media/8000d31c523631443cbe8eddaddd4300.png"
+      },
+      {
+        "category": "Web",
+        "text": "Job hunt Web Design",
+        "url": "https://dribbble.com/shots/14454453-Job-Portal-Landing-page-UX-UI-Design",
+        "img": "https://cdn.statically.io/img/cdn.dribbble.com/w=400,h=400/users/1615584/screenshots/14454453/media/69ef4fbbde7ee540579ca8d62d453c98.jpg"
+      },
+      {
+        "category": "Mobile",
+        "text": "Travel Mobile App Design",
+        "url": "https://dribbble.com/shots/14099247-Travel-Mobile-App-UX-UI-Design",
+        "img": "https://cdn.statically.io/img/cdn.dribbble.com/w=400,h=400/users/1615584/screenshots/14099247/media/c51d0b28a7916e194f9340d1237fce75.jpg"
+      },
+      {
+        "category": "Mobile",
+        "text": "Furniture Mobile App Design",
+        "url": "https://dribbble.com/shots/14011931-Furniture-Mobile-APP",
+        "img": "https://cdn.statically.io/img/cdn.dribbble.com/w=400,h=400/users/1615584/screenshots/14011931/media/ff5b21c1710672cfbc06a2bd59f6dab3.jpg"
+      },
+      {
+        "category": "Mobile",
+        "text": "Pets Mobile App Design",
+        "url": "https://dribbble.com/shots/14320703-Pets-Mobile-App-Design",
+        "img": "https://cdn.statically.io/img/cdn.dribbble.com/w=400,h=400/users/1615584/screenshots/14320703/media/85c83355f2e9389879532f6587c0b94c.jpg"
+      }
+    ]
+  },
+  "contact": {
+    "label": "Contact.",
+    "title": "CONTACT",
+    "description": "My awesome web app.",
+    "info": [{
+        "label": "ADDRESS STREET",
+        "items": ["Address : No 221B Down Street", "Landon, United Kingdom."]
+      },
+      {
+        "label": "MOBILE PHONE",
+        "items": ["Phone 1: 0(1234) 567 890", "Phone 2: 0(987) 567 890"]
+      },
+      {
+        "label": "ADDRESS EMAIL",
+        "items": ["info@yourdomain.com", "work@yourdomain.com"]
+      }
+    ],
+    "form_url": "https://formspree.io/f/xrgoayzw"
+  }
+}
