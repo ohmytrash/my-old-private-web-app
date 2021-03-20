@@ -3,6 +3,8 @@
 @import "vars";
 @import "bootstrap";
 
+@import "~photoswipe/dist/photoswipe.css";
+@import "~photoswipe/dist/default-skin/default-skin.css";
 
 // Element
 .btn {
@@ -12,6 +14,11 @@
   line-height: 3rem;
   box-shadow: none !important;
   outline: none !important;
+
+  &.btn-sm {
+    font-size: 0.75rem;
+    line-height: 2.375rem;
+  }
 }
 
 .form-control {
@@ -310,8 +317,8 @@ body {
 }
 
 
-// PorfolioFilter
-.portfolio-filter {
+// PortofolioLists
+.portofolio-lists {
   .nav {
     padding: 0;
   }
@@ -367,7 +374,7 @@ body {
   }
 }
 .dark-mode {
-  .portfolio-filter {
+  .portofolio-lists {
     .nav-link {
       color: $gray-200;
       &:hover,
