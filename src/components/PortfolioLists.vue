@@ -1,5 +1,5 @@
 <template>
-  <div class="container portofolio-lists">
+  <div class="container portfolio-lists">
     <div class="nav" v-if="filter">
       <a href="#" @click.prevent="select = 'all'" :class="{ active: select == 'all' }" class="nav-link">All</a>
       <a
@@ -45,7 +45,7 @@ import PhotoSwipe from 'photoswipe/dist/photoswipe'
 import PhotoSwipeUI from 'photoswipe/dist/photoswipe-ui-default'
 
 export default {
-  name: 'PortofolioLists',
+  name: 'PortfolioLists',
   components: {
     ZoomCenterTransition
   },

@@ -18,7 +18,7 @@
     <router-link :to="{ name: 'About' }" exact-active-class="active" class="navigation-link" :title="navigation.about">
       <UserIcon width="18" />
     </router-link>
-    <router-link :to="{ name: 'Portofolio' }" exact-active-class="active" class="navigation-link" :title="navigation.portofolio">
+    <router-link :to="{ name: 'Portfolio' }" exact-active-class="active" class="navigation-link" :title="navigation.portfolio">
       <GridIcon width="18" />
     </router-link>
     <router-link :to="{ name: 'Contact' }" exact-active-class="active" class="navigation-link" :title="navigation.contact">

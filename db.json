@@ -2,7 +2,7 @@
   "navigation": {
     "home": "HOME",
     "about": "ABOUT",
-    "portofolio": "Portofolio",
+    "portfolio": "PORTFOLIO",
     "contact": "CONTACT",
     "dark_mode": "DARK MODE",
     "light_mode": "LIGHT MODE"
@@ -55,9 +55,9 @@
       ]
     }
   },
-  "portofolio": {
-    "label": "Portofolio.",
-    "title": "Portofolio",
+  "portfolio": {
+    "label": "Portfolio.",
+    "title": "Portfolio",
     "description": "My awesome web app.",
     "items": [{
         "category": "Logo",

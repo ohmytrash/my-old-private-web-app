@@ -4,7 +4,7 @@ import store from '@/store'
 
 import HomePage from '@/views/Home'
 import AboutPage from '@/views/About'
-import PortofolioPage from '@/views/Portofolio'
+import PortfolioPage from '@/views/Portfolio'
 import ContactPage from '@/views/Contact'
 
 Vue.use(VueRouter)
@@ -21,9 +21,9 @@ const routes = [
     component: AboutPage
   },
   {
-    path: '/portofolio',
-    name: PortofolioPage.name,
-    component: PortofolioPage
+    path: '/portfolio',
+    name: PortfolioPage.name,
+    component: PortfolioPage
   },
   {
     path: '/contact',

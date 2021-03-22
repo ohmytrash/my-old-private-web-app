@@ -1,12 +1,12 @@
 <template>
-  <div class="portofolio-page py-4" v-if="portofolio">
+  <div class="portfolio-page py-4" v-if="portfolio">
     <div class="container">
-      <PageTitle>{{ portofolio.label }}</PageTitle>
+      <PageTitle>{{ portfolio.label }}</PageTitle>
     </div>
     <div class="container pb-4" v-if="!hide">
       <div class="row mb-2">
         <div class="col-8">
-          <h3>Portofolio setting</h3>
+          <h3>Portfolio setting</h3>
         </div>
         <div class="col-4 text-right">
           <button class="btn border" @click="hide = true">HIDE SETTING</button>
@@ -27,19 +27,19 @@
         </select>
       </div>
     </div>
-    <PortofolioLists :filter="getFilter" mode="link" :items="portofolio.items" v-if="mode === 'link'" />
-    <PortofolioLists :filter="getFilter" mode="zoom" :items="portofolio.items" v-if="mode === 'zoom'" />
+    <PortfolioLists :filter="getFilter" mode="link" :items="portfolio.items" v-if="mode === 'link'" />
+    <PortfolioLists :filter="getFilter" mode="zoom" :items="portfolio.items" v-if="mode === 'zoom'" />
   </div>
 </template>
 
 <script>
 import PageTitle from '@/components/PageTitle'
-import PortofolioLists from '@/components/PortofolioLists'
+import PortfolioLists from '@/components/PortfolioLists'
 export default {
-  name: 'Portofolio',
+  name: 'Portfolio',
   components: {
     PageTitle,
-    PortofolioLists
+    PortfolioLists
   },
   data() {
     return {
@@ -49,8 +49,8 @@ export default {
     }
   },
   computed: {
-    portofolio() {
-      return this.$store.getters.config.portofolio
+    portfolio() {
+      return this.$store.getters.config.portfolio
     },
     getFilter() {
       return Number(this.filter)
