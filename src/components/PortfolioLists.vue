@@ -12,15 +12,15 @@
         >{{ item }}</a
       >
     </div>
-    <ZoomCenterTransition tag="div" class="row mb-5" group>
+    <ZoomCenterTransition tag="div" class="row mb-5 no-gutters" group>
       <!-- eslint-disable-next-line vue/no-use-v-if-with-v-for -->
-      <div class="col-lg-4 col-md-6 my-3" v-for="(item, i) in items" :key="i" v-if="select == item.category || select == 'all'">
+      <div class="col-lg-4 col-md-6" v-for="(item, i) in items" :key="i" v-if="select == item.category || select == 'all'">
         <div class="img-wrap">
           <img :src="item.image" alt="img" class="img-fluid d-block w-100" />
           <div class="overlay-wrap">
             <div class="overlay-wrap__content">
-              <span class="text-light">{{ item.title }}</span>
-              <a :href="item.url" target="_blank" class="btn btn-sm btn-outline-light">DETAIL</a>
+              <span class="text-light text-truncate">{{ item.title }}</span>
+              <a :href="item.url" target="_blank" class="text-light">DETAIL</a>
             </div>
           </div>
         </div>
