@@ -5,6 +5,7 @@ import Grid from 'feather-icons/dist/icons/grid.svg'
 import Mail from 'feather-icons/dist/icons/mail.svg'
 import Moon from 'feather-icons/dist/icons/moon.svg'
 import Sun from 'feather-icons/dist/icons/sun.svg'
+import Image from 'feather-icons/dist/icons/image.svg'
 
 const icons = {
   install(Vue) {
@@ -15,6 +16,7 @@ const icons = {
     Vue.component('MailIcon', Mail)
     Vue.component('MoonIcon', Moon)
     Vue.component('SunIcon', Sun)
+    Vue.component('ImageIcon', Image)
   }
 }
 

@@ -5,6 +5,7 @@ import store from '@/store'
 import HomePage from '@/views/Home'
 import AboutPage from '@/views/About'
 import PortfolioPage from '@/views/Portfolio'
+import GalleryPage from '@/views/Gallery'
 import ContactPage from '@/views/Contact'
 
 Vue.use(VueRouter)
@@ -24,6 +25,11 @@ const routes = [
     path: '/portfolio',
     name: PortfolioPage.name,
     component: PortfolioPage
+  },
+  {
+    path: '/gallery',
+    name: GalleryPage.name,
+    component: GalleryPage
   },
   {
     path: '/contact',

@@ -3,6 +3,7 @@
     "home": "HOME",
     "about": "ABOUT",
     "portfolio": "PORTFOLIO",
+    "gallery": "GALLERY",
     "contact": "CONTACT",
     "dark_mode": "DARK MODE",
     "light_mode": "LIGHT MODE"
@@ -63,62 +64,104 @@
         "category": "Logo",
         "title": "k bolt Logo Design",
         "url": "https://dribbble.com/shots/14562865-k-bolt",
-        "small_img": "https://cdn.statically.io/img/cdn.dribbble.com/w=400,h=400/users/24078/screenshots/14562865/media/130e993838dec40962316d5fde601ec2.jpg",
-        "large_img": "https://cdn.statically.io/img/cdn.dribbble.com/w=1280,h=1280/users/24078/screenshots/14562865/media/130e993838dec40962316d5fde601ec2.jpg"
+        "image": "https://cdn.statically.io/img/cdn.dribbble.com/w=400,h=400/users/24078/screenshots/14562865/media/130e993838dec40962316d5fde601ec2.jpg"
       },
       {
         "category": "Logo",
         "title": "P + Box Logo Design",
         "url": "https://dribbble.com/shots/14616165-P-Box-Logo-Design",
-        "small_img": "https://cdn.statically.io/img/cdn.dribbble.com/w=400,h=400/users/68544/screenshots/14616165/media/f5cce7a139d97774f722649a3af55e5e.png",
-        "large_img": "https://cdn.statically.io/img/cdn.dribbble.com/w=1280,h=1280/users/68544/screenshots/14616165/media/f5cce7a139d97774f722649a3af55e5e.png"
+        "image": "https://cdn.statically.io/img/cdn.dribbble.com/w=400,h=400/users/68544/screenshots/14616165/media/f5cce7a139d97774f722649a3af55e5e.png"
       },
       {
         "category": "Logo",
         "title": "Fobonacci 01 Logo Design",
         "url": "https://dribbble.com/shots/11588377-fobonacci-01",
-        "small_img": "https://cdn.statically.io/img/cdn.dribbble.com/w=400,h=400/users/24078/screenshots/11588377/media/98f7235e173d56f168d3e9222523d42b.jpg",
-        "large_img": "https://cdn.statically.io/img/cdn.dribbble.com/w=1280,h=1280/users/24078/screenshots/11588377/media/98f7235e173d56f168d3e9222523d42b.jpg"
+        "image": "https://cdn.statically.io/img/cdn.dribbble.com/w=400,h=400/users/24078/screenshots/11588377/media/98f7235e173d56f168d3e9222523d42b.jpg"
       },
       {
         "category": "Web",
         "title": "Paulini Web Design",
         "url": "https://dribbble.com/shots/14012516-Landing-Page-Paulini",
-        "small_img": "https://cdn.statically.io/img/cdn.dribbble.com/w=400,h=400/users/702789/screenshots/14012516/media/561a8b7e8cbe51c72c18f4ef0dc72676.png",
-        "large_img": "https://cdn.statically.io/img/cdn.dribbble.com/w=1280,h=1280/users/702789/screenshots/14012516/media/561a8b7e8cbe51c72c18f4ef0dc72676.png"
+        "image": "https://cdn.statically.io/img/cdn.dribbble.com/w=400,h=400/users/702789/screenshots/14012516/media/561a8b7e8cbe51c72c18f4ef0dc72676.png"
       },
       {
         "category": "Web",
         "title": "Yogic Shiksha Web Design",
         "url": "https://dribbble.com/shots/14167472-Website-Design-Yogic-Shiksha",
-        "small_img": "https://cdn.statically.io/img/cdn.dribbble.com/w=400,h=400/users/702789/screenshots/14167472/media/8000d31c523631443cbe8eddaddd4300.png",
-        "large_img": "https://cdn.statically.io/img/cdn.dribbble.com/w=1280,h=1280/users/702789/screenshots/14167472/media/8000d31c523631443cbe8eddaddd4300.png"
+        "image": "https://cdn.statically.io/img/cdn.dribbble.com/w=400,h=400/users/702789/screenshots/14167472/media/8000d31c523631443cbe8eddaddd4300.png"
       },
       {
         "category": "Web",
         "title": "Job hunt Web Design",
         "url": "https://dribbble.com/shots/14454453-Job-Portal-Landing-page-UX-UI-Design",
-        "small_img": "https://cdn.statically.io/img/cdn.dribbble.com/w=400,h=400/users/1615584/screenshots/14454453/media/69ef4fbbde7ee540579ca8d62d453c98.jpg",
-        "large_img": "https://cdn.statically.io/img/cdn.dribbble.com/w=1280,h=1280/users/1615584/screenshots/14454453/media/69ef4fbbde7ee540579ca8d62d453c98.jpg"
+        "image": "https://cdn.statically.io/img/cdn.dribbble.com/w=400,h=400/users/1615584/screenshots/14454453/media/69ef4fbbde7ee540579ca8d62d453c98.jpg"
       },
       {
         "category": "Mobile",
         "title": "Travel Mobile App Design",
         "url": "https://dribbble.com/shots/14099247-Travel-Mobile-App-UX-UI-Design",
-        "small_img": "https://cdn.statically.io/img/cdn.dribbble.com/w=400,h=400/users/1615584/screenshots/14099247/media/c51d0b28a7916e194f9340d1237fce75.jpg",
-        "large_img": "https://cdn.statically.io/img/cdn.dribbble.com/w=1280,h=1280/users/1615584/screenshots/14099247/media/c51d0b28a7916e194f9340d1237fce75.jpg"
+        "image": "https://cdn.statically.io/img/cdn.dribbble.com/w=400,h=400/users/1615584/screenshots/14099247/media/c51d0b28a7916e194f9340d1237fce75.jpg"
       },
       {
         "category": "Mobile",
         "title": "Furniture Mobile App Design",
         "url": "https://dribbble.com/shots/14011931-Furniture-Mobile-APP",
-        "small_img": "https://cdn.statically.io/img/cdn.dribbble.com/w=400,h=400/users/1615584/screenshots/14011931/media/ff5b21c1710672cfbc06a2bd59f6dab3.jpg",
-        "large_img": "https://cdn.statically.io/img/cdn.dribbble.com/w=1280,h=1280/users/1615584/screenshots/14011931/media/ff5b21c1710672cfbc06a2bd59f6dab3.jpg"
+        "image": "https://cdn.statically.io/img/cdn.dribbble.com/w=400,h=400/users/1615584/screenshots/14011931/media/ff5b21c1710672cfbc06a2bd59f6dab3.jpg"
       },
       {
         "category": "Mobile",
         "title": "Pets Mobile App Design",
         "url": "https://dribbble.com/shots/14320703-Pets-Mobile-App-Design",
+        "image": "https://cdn.statically.io/img/cdn.dribbble.com/w=400,h=400/users/1615584/screenshots/14320703/media/85c83355f2e9389879532f6587c0b94c.jpg"
+      }
+    ]
+  },
+  "gallery": {
+    "label": "Gallery.",
+    "title": "Gallery",
+    "description": "My awesome web app.",
+    "items": [{
+        "title": "k bolt Logo Design",
+        "small_img": "https://cdn.statically.io/img/cdn.dribbble.com/w=400,h=400/users/24078/screenshots/14562865/media/130e993838dec40962316d5fde601ec2.jpg",
+        "large_img": "https://cdn.statically.io/img/cdn.dribbble.com/w=1280,h=1280/users/24078/screenshots/14562865/media/130e993838dec40962316d5fde601ec2.jpg"
+      },
+      {
+        "title": "P + Box Logo Design",
+        "small_img": "https://cdn.statically.io/img/cdn.dribbble.com/w=400,h=400/users/68544/screenshots/14616165/media/f5cce7a139d97774f722649a3af55e5e.png",
+        "large_img": "https://cdn.statically.io/img/cdn.dribbble.com/w=1280,h=1280/users/68544/screenshots/14616165/media/f5cce7a139d97774f722649a3af55e5e.png"
+      },
+      {
+        "title": "Fobonacci 01 Logo Design",
+        "small_img": "https://cdn.statically.io/img/cdn.dribbble.com/w=400,h=400/users/24078/screenshots/11588377/media/98f7235e173d56f168d3e9222523d42b.jpg",
+        "large_img": "https://cdn.statically.io/img/cdn.dribbble.com/w=1280,h=1280/users/24078/screenshots/11588377/media/98f7235e173d56f168d3e9222523d42b.jpg"
+      },
+      {
+        "title": "Paulini Web Design",
+        "small_img": "https://cdn.statically.io/img/cdn.dribbble.com/w=400,h=400/users/702789/screenshots/14012516/media/561a8b7e8cbe51c72c18f4ef0dc72676.png",
+        "large_img": "https://cdn.statically.io/img/cdn.dribbble.com/w=1280,h=1280/users/702789/screenshots/14012516/media/561a8b7e8cbe51c72c18f4ef0dc72676.png"
+      },
+      {
+        "title": "Yogic Shiksha Web Design",
+        "small_img": "https://cdn.statically.io/img/cdn.dribbble.com/w=400,h=400/users/702789/screenshots/14167472/media/8000d31c523631443cbe8eddaddd4300.png",
+        "large_img": "https://cdn.statically.io/img/cdn.dribbble.com/w=1280,h=1280/users/702789/screenshots/14167472/media/8000d31c523631443cbe8eddaddd4300.png"
+      },
+      {
+        "title": "Job hunt Web Design",
+        "small_img": "https://cdn.statically.io/img/cdn.dribbble.com/w=400,h=400/users/1615584/screenshots/14454453/media/69ef4fbbde7ee540579ca8d62d453c98.jpg",
+        "large_img": "https://cdn.statically.io/img/cdn.dribbble.com/w=1280,h=1280/users/1615584/screenshots/14454453/media/69ef4fbbde7ee540579ca8d62d453c98.jpg"
+      },
+      {
+        "title": "Travel Mobile App Design",
+        "small_img": "https://cdn.statically.io/img/cdn.dribbble.com/w=400,h=400/users/1615584/screenshots/14099247/media/c51d0b28a7916e194f9340d1237fce75.jpg",
+        "large_img": "https://cdn.statically.io/img/cdn.dribbble.com/w=1280,h=1280/users/1615584/screenshots/14099247/media/c51d0b28a7916e194f9340d1237fce75.jpg"
+      },
+      {
+        "title": "Furniture Mobile App Design",
+        "small_img": "https://cdn.statically.io/img/cdn.dribbble.com/w=400,h=400/users/1615584/screenshots/14011931/media/ff5b21c1710672cfbc06a2bd59f6dab3.jpg",
+        "large_img": "https://cdn.statically.io/img/cdn.dribbble.com/w=1280,h=1280/users/1615584/screenshots/14011931/media/ff5b21c1710672cfbc06a2bd59f6dab3.jpg"
+      },
+      {
+        "title": "Pets Mobile App Design",
         "small_img": "https://cdn.statically.io/img/cdn.dribbble.com/w=400,h=400/users/1615584/screenshots/14320703/media/85c83355f2e9389879532f6587c0b94c.jpg",
         "large_img": "https://cdn.statically.io/img/cdn.dribbble.com/w=1280,h=1280/users/1615584/screenshots/14320703/media/85c83355f2e9389879532f6587c0b94c.jpg"
       }

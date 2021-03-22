@@ -385,6 +385,17 @@ body {
   }
 }
 
+// GalleryLists
+.gallery-lists {
+  .img-wrap {
+    position: relative;
+    overflow: hidden;
+     > img {
+      cursor: zoom-in;
+    }
+  }
+}
+
 // Cursor follower
 .cursor {
   display: block;
