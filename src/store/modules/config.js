@@ -13,7 +13,7 @@ const getters = {
 
 const actions = {
   loadConfig({ commit }) {
-    if (window.location.hostname === 'localhost') {
+    if (db) {
       return commit('setConfig', db)
     }
     return fetch(JSON_DB_URL)

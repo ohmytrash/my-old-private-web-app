@@ -54,7 +54,6 @@ body {
     width: 0px;
   }
 }
-
 body {
   padding-left: 60px;
   background-color: $gray-900;
@@ -67,12 +66,10 @@ body {
     color: $gray-100;
   }
 }
-
 #app {
   position: relative;
   overflow: hidden;
 }
-
 .page {
   position: absolute;
   top: 0;
@@ -298,7 +295,7 @@ body {
   }
 }
 
-// PageTitle
+// Page title
 .page-title {
   position: relative;
   @include font-size(10rem);
@@ -316,8 +313,7 @@ body {
   }
 }
 
-
-// PortfolioLists
+// Portfolio lists
 .portfolio-lists {
   .nav {
     padding: 0;
@@ -391,7 +387,7 @@ body {
   }
 }
 
-// GalleryLists
+// Gallery lists
 .gallery-lists {
   .img-wrap {
     position: relative;
