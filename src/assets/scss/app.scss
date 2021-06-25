@@ -150,6 +150,7 @@ body {
 
   &__socials {
     display: flex;
+    margin-top: auto;
     justify-content: center;
     a {
       display: block;
@@ -198,7 +199,7 @@ body {
   height: 100vh;
   left: 0;
   opacity: 0.05;
-  background-blend-mode: darken;
+  // background-blend-mode: darken;
   pointer-events: none;
   position: fixed;
   right: 0;
@@ -209,6 +210,9 @@ body {
     height: 100vh;
     width: 100vw;
   }
+}
+.dark-mode .noise {
+  opacity: 0.1;
 }
 
 

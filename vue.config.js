@@ -43,6 +43,13 @@ module.exports = {
           options: {
             cacheName: 'api-cache'
           }
+        },
+        {
+          urlPattern: new RegExp('https://raw.githubusercontent.'),
+          handler: 'networkFirst',
+          options: {
+            cacheName: 'api-cache-v2'
+          }
         }
       ]
     }

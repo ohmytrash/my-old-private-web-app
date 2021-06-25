@@ -2,6 +2,9 @@
   <div id="app" ref="app">
     <Noise />
     <CursorFollower />
+    <span class="copyright"
+      >&copy; {{ new Date().getFullYear() }} <span class="text-primary font-weight-bold">DedeArd</span>. All right reserved.</span
+    >
     <SlideYUpTransition :duration="800" :delay="1500">
       <Loading v-if="loading" />
     </SlideYUpTransition>
@@ -86,3 +89,16 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.copyright {
+  position: fixed;
+  bottom: 5px;
+  right: 30px;
+  z-index: 200;
+  font-size: 0.875rem;
+  color: $gray-500;
+  line-height: 1;
+  pointer-events: none;
+}
+</style>

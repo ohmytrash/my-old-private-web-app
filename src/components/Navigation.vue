@@ -15,6 +15,9 @@
     <router-link :to="{ name: 'Home' }" exact-active-class="active" class="navigation-link d-none d-md-block" :title="navigation.home">
       <HomeIcon width="18" />
     </router-link>
+    <router-link :to="{ name: 'Blog' }" active-class="active" class="navigation-link" :title="navigation.blog">
+      <Share2Icon width="18" />
+    </router-link>
     <router-link :to="{ name: 'About' }" exact-active-class="active" class="navigation-link" :title="navigation.about">
       <UserIcon width="18" />
     </router-link>

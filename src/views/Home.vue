@@ -4,7 +4,10 @@
       <h1 class="home-page__title">
         {{ home.app_name }} <span aria-hidden="true">{{ home.app_name }}</span>
       </h1>
-      <p class="home-page__subtitle mb-5 text-uppercase">{{ home.app_title }}</p>
+      <p class="home-page__subtitle mb-4 text-uppercase">{{ home.app_title }}</p>
+      <div class="home-page__toggle mb-4">
+        <router-link :to="{ name: 'Blog' }" class="btn btn-light px-4">BLOG LISTS</router-link>
+      </div>
       <div class="home-page__socials">
         <a :href="item.url" target="_blank" v-for="(item, i) in home.socials" :key="i">{{ item.label }}</a>
       </div>

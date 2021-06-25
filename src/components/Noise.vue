@@ -1,15 +1,13 @@
 <template>
-  <div class="noise" :style="`background-image: url(${Noise})`">
+  <div class="noise">
     <canvas ref="canvas"></canvas>
   </div>
 </template>
 
 <script>
-import Noise from '@/assets/img/noise.gif'
 export default {
   data() {
     return {
-      Noise,
       canvas: null,
       ctx: null,
       wWidth: window.innerWidth,
@@ -27,7 +25,7 @@ export default {
       const len = buffer32.length
       for (let i = 0; i < len; i++) {
         if (Math.random() < 0.5) {
-          buffer32[i] = 0xff163238
+          buffer32[i] = 0xff000000
         }
       }
       this.noiseData = [...this.noiseData, idata]
@@ -44,7 +42,7 @@ export default {
       this.paintNoise()
       this.loopTimeout = window.setTimeout(() => {
         window.requestAnimationFrame(this.loop)
-      }, 1000 / 20)
+      }, 1000 / 30)
     },
     setup() {
       this.wWidth = window.innerWidth
@@ -67,8 +65,8 @@ export default {
   mounted() {
     this.canvas = this.$refs.canvas
     this.ctx = this.canvas.getContext('2d')
-    // this.setup()
-    // window.addEventListener('resize', this.reset)
+    this.setup()
+    window.addEventListener('resize', this.reset)
   },
   beforeDestroy() {
     window.removeEventListener('resize', this.reset)
